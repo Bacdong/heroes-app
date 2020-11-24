@@ -1,0 +1,35 @@
+.selected {
+    border: 1px solid #dbdbdb;
+    padding: 16px;
+    border-radius: 4px;
+    width: 300px;
+
+    h2 {
+        font-size: 18px;
+        color: #108cef;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 6px 0;
+
+        label {
+            font-size: 16px;
+            color: #333;
+            letter-spacing: 1px;
+        }
+
+        input {
+            padding: 6px 12px;
+            color: #333;
+            font-size: 14px;
+            outline: none;
+            border: 1px solid #dbdbdb;
+            border-radius: 2px;
+        }
+    }
+}

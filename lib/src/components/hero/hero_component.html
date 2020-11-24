@@ -1,0 +1,14 @@
+<section class="selected" *ngIf="hero != null">
+    <h2>{{ hero.name }} detail</h2>
+
+    <div>
+        <label>ID: </label>
+        <span>{{ hero.id }}</span>
+    </div>
+
+    <div>
+        <label>Name: </label>
+        <input type="text" [(ngModel)]="hero.name">
+    </div>
+</section>
+
