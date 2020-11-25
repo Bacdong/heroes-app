@@ -1,23 +1,23 @@
 import 'dart:async';
 import 'package:angular/angular.dart';
+import 'package:angular_app/src/components/hero/hero_component.dart';
 import 'package:angular_app/src/public/hero.dart';
 import 'package:angular_app/src/public/mock_hero.dart';
 import 'package:angular_app/src/services/hero_serive.dart';
 import 'package:angular_forms/angular_forms.dart';
 
-import '../../components/hero/hero_component.dart';
 
 @Component(
-  selector: 'my-heroes', 
-  templateUrl: 'hero_list_component.html', 
-  styleUrls: ['hero_list_component.css'], 
+  selector: 'my-heroes',
+  templateUrl: 'hero_list_component.html',
+  styleUrls: ['hero_list_component.css'],
 
   directives: [
     coreDirectives,
     formDirectives,
     HeroComponent,
-  ], 
-  
+  ],
+
   providers: [ClassProvider(HeroService)]
 )
 
